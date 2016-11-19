@@ -1,0 +1,54 @@
+{
+  "name": "ng2-hello-world-aot-rollup",
+  "version": "0.0.0",
+  "description": "Angular2 Hello World treeshaked AoT application",
+  "repository": "SamVerschueren/ng2-hello-world-aot",
+  "author": {
+    "name": "Sam Verschueren",
+    "email": "sam.verschueren@gmail.com",
+    "url": "github.com/SamVerschueren"
+  },
+  "scripts": {
+    "clean": "rm -rf dist && rm -rf aot && cd build && find . ! -name 'index.html' -type f -exec rm -f {} + && cd ..",
+    "start": "npm run clean && tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "build.compile": "tsc -p tsconfig.json",
+    "build.shims": "uglifyjs node_modules/core-js/client/shim.js node_modules/zone.js/dist/zone.js node_modules/reflect-metadata/Reflect.js node_modules/systemjs/dist/system.src.js -m -o build/shims.js",
+    "build.rollup": "rollup -c rollup-config.js",
+    "build.uglify": "uglifyjs build/main.js -m -o build/main.min.js",
+    "build": "npm run clean && npm run build.compile && npm run build.shims && node make"
+  },
+  "dependencies": {
+    "@angular/common": "~2.2.0",
+    "@angular/compiler": "~2.2.0",
+    "@angular/compiler-cli": "^2.2.0",
+    "@angular/core": "~2.2.0",
+    "@angular/forms": "~2.2.0",
+    "@angular/http": "~2.2.0",
+    "@angular/platform-browser": "~2.2.0",
+    "@angular/platform-browser-dynamic": "~2.2.0",
+    "@angular/platform-server": "^2.2.0",
+    "@angular/router": "~3.2.0",
+    "@angular/upgrade": "~2.2.0",
+    "angular-in-memory-web-api": "~0.1.13",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.45",
+    "@types/systemjs": "^0.19.31",
+    "concurrently": "^3.0.0",
+    "lite-server": "^2.2.2",
+    "rollup": "^0.36.3",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "systemjs-builder": "^0.15.34",
+    "typescript": "^2.0.3",
+    "uglify-js": "^2.7.4"
+  }
+}
