@@ -39,10 +39,9 @@ const SYSTEM_BUILDER_CONFIG = {
 
 const BUNDLER_OPTIONS = {
 	format: 'cjs',
-	minify: false,
+	minify: true,
 	mangle: false,
-	sourceMaps: true,
-	runtime: true
+	sourceMaps: true
 };
 
 const bundleMain = () => {
