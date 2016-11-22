@@ -32,6 +32,8 @@ This will compile the source files with [AoT compilation](https://angular.io/doc
 - [ng2-hello-world-aot](https://github.com/SamVerschueren/ng2-hello-world-aot) - Angular2 Hello World AoT application
 - [ng2-hello-world-aot-rollup](https://github.com/SamVerschueren/ng2-hello-world-aot-rollup) - Angular2 Hello World treeshaked AoT application
 - [ng2-hello-world-routing](https://github.com/SamVerschueren/ng2-hello-world-routing) - Angular2 Hello World treeshaked AoT routing application
+- [ng2-hello-world-lazy-routing-preload](https://github.com/SamVerschueren/ng2-hello-world-lazy-routing-preload) - Angular2 Hello World lazy routing application with preloading
+- [ng2-hello-world-lazy-routing-custom-preload](https://github.com/SamVerschueren/ng2-hello-world-lazy-routing-custom-preload) - Angular2 Hello World lazy routing application with custom preloading
 
 
 ## License
