@@ -48,7 +48,7 @@
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.1",
     "systemjs-builder": "^0.15.34",
-    "typescript": "^2.0.3",
+    "typescript": "2.0.10",
     "uglify-js": "^2.7.4"
   }
 }
