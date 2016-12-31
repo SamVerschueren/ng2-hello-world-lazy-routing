@@ -9,7 +9,7 @@
     "url": "github.com/SamVerschueren"
   },
   "scripts": {
-    "clean": "rm -rf dist && rm -rf aot && cd build && find . ! -name 'index.html' -type f -exec rm -f {} + && cd ..",
+    "clean": "rm -rf dist && rm -rf aot && del-cli 'build/*' '!build/index.html'",
     "start": "npm run clean && tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "lite": "lite-server",
     "build.compile": "tsc -p tsconfig.json",
@@ -42,6 +42,7 @@
     "@types/node": "^6.0.45",
     "@types/systemjs": "^0.19.31",
     "concurrently": "^3.0.0",
+    "del-cli": "^0.2.1",
     "lite-server": "^2.2.2",
     "rollup": "^0.36.3",
     "rollup-plugin-commonjs": "^5.0.5",
