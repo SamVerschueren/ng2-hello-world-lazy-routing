@@ -14,8 +14,6 @@
     "lite": "lite-server",
     "build.compile": "tsc -p tsconfig.json",
     "build.shims": "uglifyjs node_modules/core-js/client/shim.js node_modules/zone.js/dist/zone.js node_modules/reflect-metadata/Reflect.js node_modules/systemjs/dist/system.src.js -m -o build/shims.js",
-    "build.rollup": "rollup -c rollup-config.js",
-    "build.uglify": "uglifyjs build/main.js -m -o build/main.min.js",
     "build": "npm run clean && npm run build.compile && npm run build.shims && node make"
   },
   "dependencies": {
@@ -44,10 +42,6 @@
     "concurrently": "^3.0.0",
     "del-cli": "^0.2.1",
     "lite-server": "^2.2.2",
-    "rollup": "^0.36.3",
-    "rollup-plugin-commonjs": "^5.0.5",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "rollup-plugin-uglify": "^1.0.1",
     "systemjs-builder": "^0.15.34",
     "typescript": "2.0.10",
     "uglify-js": "^2.7.4"
