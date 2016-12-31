@@ -1,5 +1,7 @@
 # ng2-hello-world-lazy-routing
 
+[![Build Status: Linux](https://travis-ci.org/SamVerschueren/ng2-hello-world-lazy-routing.svg?branch=master)](https://travis-ci.org/SamVerschueren/ng2-hello-world-lazy-routing) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/ojhrm8ftsmtjda00/branch/master?svg=true)](https://ci.appveyor.com/project/SamVerschueren/ng2-hello-world-lazy-routing/branch/master)
+
 > Angular2 Hello World lazy routing application
 
 
