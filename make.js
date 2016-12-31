@@ -77,4 +77,5 @@ bundleMain()
 	.catch(err => {
 		console.log('Build error');
 		console.log(err);
+		process.exit(-1);
 	});
