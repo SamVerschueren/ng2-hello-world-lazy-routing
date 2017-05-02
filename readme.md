@@ -23,10 +23,6 @@ $ npm start
 $ npm run build
 ```
 
-> Note: Rollup will throw quite some warnings indicating that `The 'this' keyword is equivalent to 'undefined' at the top level of an ES module`. You can safely ignore these.
-
-This will compile the source files with [AoT compilation](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html) and creates one single [treeshaked](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html#!#tree-shaking) bundle in the `build` directory.
-
 
 ## Related
 
